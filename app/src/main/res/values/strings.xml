@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ShopListApp</string>
+    <string name="archive_list">Archive list</string>
+    <string name="retrieve_from_archive">Retrieve from archive</string>
+    <string name="created">Created:</string>
+    <string name="archived_message">Added to archive!</string>
+    <string name="unarchived_message">Retrieved from archive!</string>
+
+    <!-- New List Dialog -->
+    <string name="new_list_dialog_edit_text_hint">New list name</string>
+    <string name="new_list_dialog_title">Please type new list name</string>
+    <string name="new_list_dialog_ok_button">OK</string>
+    <string name="new_list_dialog_cancel_button">Cancel</string>
+
+    <!-- Delete List Dialog Fragment -->
+    <string name="delete_dialog_message">Remove list?</string>
+    <string name="delete_dialog_ok_button">OK</string>
+    <string name="delete_dialog_cancel_button">Cancel</string>
+
+</resources>

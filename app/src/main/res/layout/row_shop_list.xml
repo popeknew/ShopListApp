@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="list"
+            type="com.example.shoplistapp.model.ShopList" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/row_shop_list_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/half_margin"
+        android:elevation="@dimen/product_card_view_elevation"
+        app:cardCornerRadius="@dimen/product_card_view_corner_radius">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/shop_list_layout_padding"
+            android:background="@drawable/row_background">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/left_shop_icon_width"
+                android:layout_height="44dp"
+                android:src="@drawable/color_shop_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/right_icon" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_all_lists"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/product_text_size"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="@dimen/half_margin"
+                android:gravity="center|start"
+                android:text="@{list.name}"
+                android:textAlignment="gravity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/right_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="List name" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/creation_date"
+                creationDate="@{list.created}"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/item_all_lists"
+                app:layout_constraintTop_toBottomOf="@+id/item_all_lists" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/end_arrow_icon"
+                android:src="@drawable/right_black_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common Dimens -->
+    <dimen name="standard_margin">16dp</dimen>
+    <dimen name="half_margin">8dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_elevation">4dp</dimen>
+
+    <!-- FAB Dimens -->
+    <dimen name="standard_fab_image_max_size">46dp</dimen>
+    <dimen name="standard_fab_elevation">10dp</dimen>
+
+    <!-- Top Hint Text Input Layout Style -->
+    <dimen name="top_hint_text_input_layout_text_size">12sp</dimen>
+
+    <!-- Row Product Dimens -->
+    <dimen name="product_card_view_corner_radius">5dp</dimen>
+    <dimen name="product_card_view_elevation">8dp</dimen>
+    <dimen name="product_layout_padding">5dp</dimen>
+    <dimen name="left_shop_icon_width">50dp</dimen>
+    <dimen name="left_shop_icon_height">44dp</dimen>
+    <dimen name="product_text_size">18sp</dimen>
+
+    <!-- Shop List CardView Dimens -->
+    <dimen name="shop_list_layout_padding">3dp</dimen>
+    <dimen name="shop_list_creation_date_height">20dp</dimen>
+
+    <!-- Row Background -->
+    <dimen name="row_background_stroke_width">3dp</dimen>
+
+    <!-- New List Dialog Dimens -->
+    <dimen name="new_list_dialog_text_input_layout_height">60dp</dimen>
+</resources>
