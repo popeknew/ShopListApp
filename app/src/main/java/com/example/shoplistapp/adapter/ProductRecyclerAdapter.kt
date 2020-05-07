@@ -48,7 +48,7 @@ class ProductRecyclerAdapter :
         fun bind(product: Product) {
             with(binding) {
                 this.product = product
-                productCardView.requestFocus()
+                //productCardView.requestFocus()
                 deleteProductButton.setOnClickListener { deleteCallback?.invoke(product) }
                 productName.addTextChangedListener(object : TextWatcher {
                     override fun afterTextChanged(p0: Editable?) {

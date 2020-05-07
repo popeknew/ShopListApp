@@ -9,6 +9,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
+import androidx.recyclerview.widget.LinearSmoothScroller
+import androidx.recyclerview.widget.RecyclerView
 import com.example.shoplistapp.R
 import com.example.shoplistapp.adapter.ProductRecyclerAdapter
 import com.example.shoplistapp.databinding.ActivityProductBinding
@@ -83,6 +85,7 @@ class ProductActivity : AppCompatActivity() {
         binding.recyclerView.adapter = shopListAdapter
         viewModel.allProducts.observe(this, productListObserver)
         shopListAdapter.registerAdapterDataObserver(scrollToNewItemInserted(binding.recyclerView))
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
